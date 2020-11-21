@@ -1,0 +1,79 @@
+.signinmain{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #909ed6, #6683ac);
+    /* display: flex;
+    justify-content: center;
+    align-items: center */
+}
+.logo {
+    top:0;
+    left:0;
+    padding: 20px 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.signinDiv {
+    width:350px;
+    height:200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.signinDiv h1 {
+    color: #445d81;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+form {
+    width:80%;
+    height: 100%;
+    /* background-color: red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    /* padding: 20px 0 0 0; */
+}
+form p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #42597a;
+    /* text-align: center; */
+    margin-top: 15px;
+    
+
+}
+form input {
+    width:80%;
+    height: 20%;
+    border: none;
+    outline: none;
+    background-color: #eceff8;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+form button {
+    padding: 10px 20px;
+    background-color: #6683ac;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 15px
+}
