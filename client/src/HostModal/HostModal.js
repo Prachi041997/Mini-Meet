@@ -7,7 +7,7 @@ const HostModal = ({show, onHide})=> {
     const [room, setRoom] = useState('');
     const onCreateLinkHandle = (e)=> {
         e.preventDefault();
-        axios.get('http://localhost:3030/createRoom')
+        axios.get('api/createRoom')
         .then(data=> {
             console.log(data);
             setRoom(data.data.room);
@@ -18,7 +18,7 @@ const HostModal = ({show, onHide})=> {
 
     const showLink = ()=> {
         if(room!==''){
-            let link = `http://localhost:3000/${room}`
+            let link = `https://${window.location.hostname}/${room}`
             return (
                 <div style={{display:'flex', justifyContent:'center', maxHeight:'35px', margin:'0 20px 30px 20px'}}>
             {/* <input className='createInput' type='text' value={link} readOnly={true}></input> */}

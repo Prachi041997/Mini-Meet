@@ -28,7 +28,7 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.get('/createRoom', (req, res)=> {
+app.get('/api/createRoom', (req, res)=> {
   res.json({
     room: uuidV4()
   })
